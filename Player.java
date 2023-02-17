@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Player {
     private String name;
     private char symbol;
+    protected int x, y;
     // Constructor initializes the player with a name and symbol
     Player(String name, char symbol){
         this.name = name;

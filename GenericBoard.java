@@ -35,7 +35,7 @@ public abstract class GenericBoard {
             System.out.println();
             if (i < n - 1) {
                 for (int k = 0; k < n; k++) {
-                    System.out.print("---");
+                    System.out.print("----");
                 }
                 System.out.println();
             }
