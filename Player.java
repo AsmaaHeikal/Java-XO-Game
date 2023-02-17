@@ -23,6 +23,10 @@ public class Player {
         Scanner input = new Scanner(System.in);
         x = input.nextInt();
         y = input.nextInt();
+        //-----------------------change-----------------------------
+        this.x = x;
+        this.y = y;
+        
         System.out.println("x = " + x + ", y = " + y);
     }
 }
