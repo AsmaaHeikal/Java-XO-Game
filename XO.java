@@ -7,6 +7,8 @@ public class XO extends GenericBoard {
 
     @Override
     public boolean updateBoard(int x, int y, char symbol) {
+        x--; // convert to 0-based
+        y--;
         if (x < 0 || x >= n || y < 0 || y >= n || grid[x][y] != ' ') {
             return false; // invalid move
         }
