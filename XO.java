@@ -1,5 +1,5 @@
 public class XO extends GenericBoard {
-    // ba3mel call ll constructor beta3et el superclass we edeto value n = 3
+    // Calling the constructor of the super class and giving n value of 3.
     public XO() {
         super(3); 
     }
@@ -19,7 +19,7 @@ public class XO extends GenericBoard {
 
     @Override
     public boolean isWinner(char symbol) {
-        // ba check kol el rows w kol el columns
+        // Checking rows and columns.
         for (int i = 0; i < n; i++) {
             if (grid[i][0] == symbol && grid[i][1] == symbol && grid[i][2] == symbol) {
                 return true;
@@ -29,7 +29,7 @@ public class XO extends GenericBoard {
             }
         }
 
-        // ba check el diagonals
+        // Checking diagonals.
         if (grid[0][0] == symbol && grid[1][1] == symbol && grid[2][2] == symbol) {
             return true;
         }
@@ -43,15 +43,15 @@ public class XO extends GenericBoard {
 
     @Override
     public boolean isDraw() {
-        // el Draw by7sl lw mafe4 ay space fadia we mafe4 winner
+        // If there is no space left and no winner, then it's draw.
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == ' ') {
-                    return false; // lesa fe empty cells 34an keda rag3t false
+                    return false; // There are still empty cells. That's why it returns false.
                 }
             }
         }
-        return true; // lw kol el cells filled then return true
+        return true; // If all cells are filled, then return true.
     }
 }
 //ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
