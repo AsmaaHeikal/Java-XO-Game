@@ -2,7 +2,7 @@ public abstract class GenericBoard {
     protected int n;
     protected char[][] grid;
 //ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
-// hena ba3mel constructor lel class 34an a2dr anady 3leh b3d keda fe el XO class.
+// Creating constructor to be called in XO class.
     public GenericBoard(int n) {
         
         this.n = n;
@@ -15,7 +15,7 @@ public abstract class GenericBoard {
     }
 //ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
 
-    //kol el methods de hat3mlha override fe el subclass we dh 3la 7sb el game elly e7na han3mlha.
+    //These methods are going to be overriden depending on the game. 
     public abstract boolean updateBoard(int x, int y, char symbol);
 
     public abstract boolean isWinner(char symbol);
